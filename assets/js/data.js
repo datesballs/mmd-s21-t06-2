@@ -1,7 +1,7 @@
 // JS by Dan Høegh
 // UCN MMD 2021
 
-const productImageFilePath = "../images/";
+const productImageFilePath = "./assets/images/";
 const productCurrency = "DKK";
 
 const products = [

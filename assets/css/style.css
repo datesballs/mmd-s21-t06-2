@@ -68,5 +68,17 @@ h1, p {
 }
 
 .card {
-	
+	margin: 20px;
+	background-color: var(--frp-color-primary);
+	color: var(--frp-color-on-primary);
+	padding: var(--frp-density-m);
+}
+
+.price {
+	font-size: 1.2rem;
+	font-weight: 800;
+}
+.oldPrice {
+	text-decoration: line-through;
+	color: red; 
 }
