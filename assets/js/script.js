@@ -1,48 +1,48 @@
 // JS by Dan Høegh
 // UCN MMD 2021
 
-// // functions the old way (which is still valid and ok to use)
+// functions the old way (which is still valid and ok to use)
 
-// // a function that does the same thing every time you call it
-// function oldWriteToApp() {
-//     document.querySelector("#test").innerHTML += "Old time function";
-// }
+// a function that does the same thing every time you call it
+function oldWriteToApp() {
+    document.querySelector("#test").innerHTML += "Old time function";
+}
 
-// // a function that adds a single string to app
-// function oldWriteCustomContentToApp(newContent) {
-//     document.querySelector("#test").innerHTML += newContent;
-// }
+// a function that adds a single string to app
+function oldWriteCustomContentToApp(newContent) {
+    document.querySelector("#test").innerHTML += newContent;
+}
 
-// // a function that adds two different strings to app
-// function oldWriteCustomContentAndElementToApp(newContent, elementType){
-//     document.querySelector("#test").innerHTML += `
-//         <${elementType}>${newContent}</${elementType}>
-//     `;
-// }
+// a function that adds two different strings to app
+function oldWriteCustomContentAndElementToApp(newContent, elementType){
+    document.querySelector("#test").innerHTML += `
+        <${elementType}>${newContent}</${elementType}>
+    `;
+}
 
-// oldWriteToApp();
-// oldWriteCustomContentToApp("old time function with a parameter");
-// oldWriteCustomContentAndElementToApp("Test of elementtype", "h1");
+oldWriteToApp();
+oldWriteCustomContentToApp("old time function with a parameter");
+oldWriteCustomContentAndElementToApp("Test of elementtype", "h1");
 
 // // functions the new way (arrow functions)
 
-// const newWriteToApp = () => {
-//     document.querySelector("#test").innerHTML += "Old time function";
-// }
+const newWriteToApp = () => {
+    document.querySelector("#test").innerHTML += "Old time function";
+}
 
-// const newWriteCustomContentToApp = (newContent) => {
-//     document.querySelector("#test").innerHTML += newContent;
-// }
+const newWriteCustomContentToApp = (newContent) => {
+    document.querySelector("#test").innerHTML += newContent;
+}
 
-// const newWriteCustomContentAndElementToApp = (newContent, elementType) => {
-//     document.querySelector("#test").innerHTML += `
-//         <${elementType}>${newContent}</${elementType}>
-//     `;
-// }
+const newWriteCustomContentAndElementToApp = (newContent, elementType) => {
+    document.querySelector("#test").innerHTML += `
+        <${elementType}>${newContent}</${elementType}>
+    `;
+}
 
 // newWriteToApp();
-// newWriteCustomContentToApp("old time function with a parameter");
-// newWriteCustomContentAndElementToApp("Test of elementtype", "h1");
+newWriteCustomContentToApp("old time function with a parameter");
+newWriteCustomContentAndElementToApp("Test of elementtype", "h1");
 
 const clearHTML = (selector) => {
     const elements = document.querySelectorAll(selector);
