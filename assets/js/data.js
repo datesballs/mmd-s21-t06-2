@@ -17,7 +17,7 @@ const products = [
         name: "Plate",
         price: 200,
         priceDiscount: 150,
-        description: "Round plate to suit your need fo not putting the food directly on the table.",
+        // description: "Round plate to suit your need fo not putting the food directly on the table.",
         imageFile: "plate.jpg",
         imageThumbFile: "plate_thumb.jpg",
         isInStock: true
